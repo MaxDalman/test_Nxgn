@@ -13,12 +13,13 @@ company_name = 'IOBS'
 job_title = 'market agent'
 business_email = "maxdolmanmailcom"
 phone_number = '+3878-456-38-38'
+question = 'Просьба не реагировать. Это тест.'
 
 #User for subs
 name = 'Alex'
 post = 'Journalist'
 company_name = 'IOBS'
-email = '123'
+email = 'AleBiobs'
 
 
 #Others

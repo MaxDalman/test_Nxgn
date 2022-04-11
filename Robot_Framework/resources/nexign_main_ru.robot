@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../resources/variables.py
+Variables    ../resources/variables.py
 
 *** Keywords ***
 Open Browser and Maximize
@@ -27,7 +27,7 @@ Accept cookies
     Wait Until Page Does Not Contain Element    sliding-popup
 
 Send get in touch form
-    [Arguments]    ${first_name}    ${last_name}    ${company_name}    ${job_title}    ${business_email}    ${phone_number}
+    [Arguments]    ${first_name}    ${last_name}    ${company_name}    ${job_title}    ${business_email}    ${phone_number}    ${question}
     Scroll Element Into View    class=main-form
     Input Text    edit-name    ${first_name}
     Input Text    edit-last-name    ${last_name}
@@ -35,10 +35,12 @@ Send get in touch form
     Input Text    edit-post    ${job_title}
     Input Text    edit-e-mail    ${business_email}
     Input Text    edit-phone-number    ${phone_number}
-    # Select Checkbox    name=consent
-    Select Checkbox    name=subscribe
+    Input Text    name=question    ${question}
+    Checkbox Should Not Be Selected    edit-consent
+    #Click Element    xpath=/html/body/div[1]/div/main/div[7]/div/div/div/div/form/div[10]/input
+    #Checkbox Should Be Selected    edit-consent
+    Click Element    xpath=/html/body/div[1]/div/main/div[7]/div/div/div/div/form/div[11]/label
     Click Button   edit-actions-submit
-    Page Should Not Contain    Заполните форму ниже, и наш сотрудник свяжется с вами в ближайшее время
     Log    Request has been sent
 
 Check Get in touch
@@ -75,9 +77,9 @@ Subscribed
     [Arguments]    ${name}    ${post}    ${company_name}    ${email}
     Scroll Element Into View    id=webform-submission-get-our-newsletter-node-17-add-form
     Input Text    name=name    ${name}
-    Input Text    name=post    ${post}
-    Select From List By Value    xpath=//*[@id="edit-country"]    Австрия
     Input Text    name=company_name    ${company_name}
+    Select From List By Value    xpath=//*[@id="edit-country"]    Австрия
+    Input Text    name=post    ${post}
     Input Text    name=e_mail    ${email}
     Click Element    xpath=//*[@id="webform-submission-get-our-newsletter-node-17-add-form"]/div[6]
     Click Element    name=op

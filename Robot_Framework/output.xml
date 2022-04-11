@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.10 on win32)" generated="20220322 20:51:46.938" rpa="false" schemaversion="2">
-<suite id="s1" name="Test Cases" source="C:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\test_cases">
-<suite id="s1-s1" name="Test Nexign" source="C:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\test_cases\test_nexign.robot">
-<test id="s1-s1-t1" name="The correct function buttons">
+<robot generator="Robot 4.1.3 (Python 3.9.10 on win32)" generated="20220411 18:37:18.909" rpa="false" schemaversion="2">
+<suite id="s1" name="Test Nexign" source="c:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\test_cases\test_nexign.robot">
+<test id="s1-t1" name="Test get in touch form">
 <kw name="Open Browser and Maximize" library="nexign_main_ru" type="SETUP">
 <arg>${url_main}</arg>
 <arg>${browser_chrome}</arg>
@@ -10,261 +9,62 @@
 <arg>${test_url}</arg>
 <arg>${test_browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220322 20:51:47.198" level="INFO">Opening browser 'Chrome' to base url 'https://nexign.com/ru/'.</msg>
-<status status="PASS" starttime="20220322 20:51:47.197" endtime="20220322 20:51:51.761"/>
+<msg timestamp="20220411 18:37:19.100" level="INFO">Opening browser 'Chrome' to base url 'https://nexign.com/ru/'.</msg>
+<status status="PASS" starttime="20220411 18:37:19.100" endtime="20220411 18:37:22.586"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220322 20:51:51.762" endtime="20220322 20:51:51.892"/>
+<status status="PASS" starttime="20220411 18:37:22.586" endtime="20220411 18:37:22.705"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Staring test in ${test_browser}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:51:51.892" level="INFO">Staring test in Chrome</msg>
-<status status="PASS" starttime="20220322 20:51:51.892" endtime="20220322 20:51:51.892"/>
+<msg timestamp="20220411 18:37:22.705" level="INFO">Staring test in Chrome</msg>
+<status status="PASS" starttime="20220411 18:37:22.705" endtime="20220411 18:37:22.705"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Test URL: ${test_url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:51:51.894" level="INFO">Test URL: https://nexign.com/ru/</msg>
-<status status="PASS" starttime="20220322 20:51:51.893" endtime="20220322 20:51:51.894"/>
+<msg timestamp="20220411 18:37:22.705" level="INFO">Test URL: https://nexign.com/ru/</msg>
+<status status="PASS" starttime="20220411 18:37:22.705" endtime="20220411 18:37:22.705"/>
 </kw>
-<status status="PASS" starttime="20220322 20:51:47.197" endtime="20220322 20:51:51.895"/>
+<status status="PASS" starttime="20220411 18:37:19.099" endtime="20220411 18:37:22.705"/>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <arg>./screenshots/fail</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220322 20:51:51.895" endtime="20220322 20:51:51.896"/>
+<status status="PASS" starttime="20220411 18:37:22.706" endtime="20220411 18:37:22.706"/>
 </kw>
 <kw name="Accept cookies" library="nexign_main_ru">
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>sliding-popup</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220322 20:51:51.896" endtime="20220322 20:51:51.944"/>
+<status status="PASS" starttime="20220411 18:37:22.707" endtime="20220411 18:37:22.751"/>
 </kw>
 <kw name="Page Should Contain Element" library="SeleniumLibrary">
 <arg>sliding-popup</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:51:51.953" level="INFO">Current page contains element 'sliding-popup'.</msg>
-<status status="PASS" starttime="20220322 20:51:51.944" endtime="20220322 20:51:51.953"/>
+<msg timestamp="20220411 18:37:22.780" level="INFO">Current page contains element 'sliding-popup'.</msg>
+<status status="PASS" starttime="20220411 18:37:22.751" endtime="20220411 18:37:22.780"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220322 20:51:52.961" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220322 20:51:51.954" endtime="20220322 20:51:52.961"/>
+<msg timestamp="20220411 18:37:23.784" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220411 18:37:22.780" endtime="20220411 18:37:23.784"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:52.962" level="INFO">Clicking button 'xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]'.</msg>
-<status status="PASS" starttime="20220322 20:51:52.962" endtime="20220322 20:51:53.037"/>
+<msg timestamp="20220411 18:37:23.784" level="INFO">Clicking button 'xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]'.</msg>
+<status status="PASS" starttime="20220411 18:37:23.784" endtime="20220411 18:37:23.862"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>sliding-popup</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220322 20:51:53.038" endtime="20220322 20:51:54.120"/>
+<status status="PASS" starttime="20220411 18:37:23.862" endtime="20220411 18:37:24.959"/>
 </kw>
-<status status="PASS" starttime="20220322 20:51:51.896" endtime="20220322 20:51:54.120"/>
-</kw>
-<kw name="Check Get in touch" library="nexign_main_ru">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class=get-in-touch__button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:54.120" level="INFO">Clicking element 'class=get-in-touch__button'.</msg>
-<status status="PASS" starttime="20220322 20:51:54.120" endtime="20220322 20:51:54.181"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=/html/body/div[1]/div/div[4]</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:51:54.470" level="INFO">Current page contains element 'xpath=/html/body/div[1]/div/div[4]'.</msg>
-<status status="PASS" starttime="20220322 20:51:54.450" endtime="20220322 20:51:54.470"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class=get-in-touch__popup-close</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:54.491" level="INFO">Clicking element 'class=get-in-touch__popup-close'.</msg>
-<status status="PASS" starttime="20220322 20:51:54.491" endtime="20220322 20:51:54.543"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//div[@style='display: none;']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:51:54.556" level="INFO">Current page contains element 'xpath=//div[@style='display: none;']'.</msg>
-<status status="PASS" starttime="20220322 20:51:54.544" endtime="20220322 20:51:54.556"/>
-</kw>
-<status status="PASS" starttime="20220322 20:51:54.120" endtime="20220322 20:51:54.558"/>
-</kw>
-<kw name="Change language" library="nexign_main_ru">
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>class=header__language</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220322 20:51:54.558" endtime="20220322 20:51:54.852"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class=language__curent</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:54.852" level="INFO">Clicking element 'class=language__curent'.</msg>
-<status status="PASS" starttime="20220322 20:51:54.852" endtime="20220322 20:51:54.902"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>xpath=//div[@class='language language_white language_top language_select language_opened']</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:51:54.915" level="INFO">Current page contains element 'xpath=//div[@class='language language_white language_top language_select language_opened']'.</msg>
-<status status="PASS" starttime="20220322 20:51:54.903" endtime="20220322 20:51:54.915"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//a[@class='language-link language__option']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:54.917" level="INFO">Clicking element 'xpath=//a[@class='language-link language__option']'.</msg>
-<status status="PASS" starttime="20220322 20:51:54.916" endtime="20220322 20:51:55.667"/>
-</kw>
-<status status="PASS" starttime="20220322 20:51:54.558" endtime="20220322 20:51:55.668"/>
-</kw>
-<kw name="Check search" library="nexign_main_ru">
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>class=header__search</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220322 20:51:55.669" endtime="20220322 20:51:55.972"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class=header__search</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:55.973" level="INFO">Clicking element 'class=header__search'.</msg>
-<status status="PASS" starttime="20220322 20:51:55.972" endtime="20220322 20:51:56.022"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>class=custom-search</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:51:56.054" level="INFO">Current page contains element 'class=custom-search'.</msg>
-<status status="PASS" starttime="20220322 20:51:56.023" endtime="20220322 20:51:56.054"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=edit-search-api-fulltext</arg>
-<arg>Nexign</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:56.056" level="INFO">Typing text 'Nexign' into text field 'id=edit-search-api-fulltext'.</msg>
-<status status="PASS" starttime="20220322 20:51:56.055" endtime="20220322 20:51:56.174"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=edit-submit-search</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:56.176" level="INFO">Clicking element 'id=edit-submit-search'.</msg>
-<status status="PASS" starttime="20220322 20:51:56.175" endtime="20220322 20:51:56.742"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>class=custom-search__output</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:51:56.756" level="INFO">Current page contains element 'class=custom-search__output'.</msg>
-<status status="PASS" starttime="20220322 20:51:56.743" endtime="20220322 20:51:56.756"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class=custom-search__close</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:56.758" level="INFO">Clicking element 'class=custom-search__close'.</msg>
-<status status="PASS" starttime="20220322 20:51:56.758" endtime="20220322 20:51:57.682"/>
-</kw>
-<status status="PASS" starttime="20220322 20:51:55.669" endtime="20220322 20:51:57.683"/>
-</kw>
-<kw name="Check page-up block" library="nexign_main_ru">
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>class=footer</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220322 20:51:57.684" endtime="20220322 20:51:57.983"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>class=page-up-block</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:51:57.984" level="INFO">Clicking element 'class=page-up-block'.</msg>
-<status status="PASS" starttime="20220322 20:51:57.983" endtime="20220322 20:51:58.057"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>class=header</arg>
-<arg>header_white</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:51:58.078" level="INFO">Current page contains element 'class=header'.</msg>
-<status status="PASS" starttime="20220322 20:51:58.058" endtime="20220322 20:51:58.078"/>
-</kw>
-<status status="PASS" starttime="20220322 20:51:57.684" endtime="20220322 20:51:58.079"/>
-</kw>
-<kw name="Close Browser and Log" library="nexign_main_ru" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220322 20:51:58.080" endtime="20220322 20:52:00.221"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Finished test.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:00.221" level="INFO">Finished test.</msg>
-<status status="PASS" starttime="20220322 20:52:00.221" endtime="20220322 20:52:00.221"/>
-</kw>
-<status status="PASS" starttime="20220322 20:51:58.080" endtime="20220322 20:52:00.221"/>
-</kw>
-<status status="PASS" starttime="20220322 20:51:47.196" endtime="20220322 20:52:00.221"/>
-</test>
-<test id="s1-s1-t2" name="Check the feedback form">
-<kw name="Open Browser and Maximize" library="nexign_main_ru" type="SETUP">
-<arg>${url_main}</arg>
-<arg>${browser_chrome}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${test_url}</arg>
-<arg>${test_browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220322 20:52:00.231" level="INFO">Opening browser 'Chrome' to base url 'https://nexign.com/ru/'.</msg>
-<status status="PASS" starttime="20220322 20:52:00.230" endtime="20220322 20:52:05.871"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220322 20:52:05.872" endtime="20220322 20:52:06.000"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Staring test in ${test_browser}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:06.001" level="INFO">Staring test in Chrome</msg>
-<status status="PASS" starttime="20220322 20:52:06.001" endtime="20220322 20:52:06.001"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Test URL: ${test_url}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:06.002" level="INFO">Test URL: https://nexign.com/ru/</msg>
-<status status="PASS" starttime="20220322 20:52:06.002" endtime="20220322 20:52:06.002"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:00.230" endtime="20220322 20:52:06.003"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>./screenshots/fail</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220322 20:52:06.004" endtime="20220322 20:52:06.004"/>
-</kw>
-<kw name="Accept cookies" library="nexign_main_ru">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220322 20:52:06.005" endtime="20220322 20:52:06.052"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:52:06.059" level="INFO">Current page contains element 'sliding-popup'.</msg>
-<status status="PASS" starttime="20220322 20:52:06.053" endtime="20220322 20:52:06.060"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220322 20:52:07.079" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220322 20:52:06.060" endtime="20220322 20:52:07.079"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:07.079" level="INFO">Clicking button 'xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]'.</msg>
-<status status="PASS" starttime="20220322 20:52:07.079" endtime="20220322 20:52:07.159"/>
-</kw>
-<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220322 20:52:07.160" endtime="20220322 20:52:08.259"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:06.005" endtime="20220322 20:52:08.259"/>
+<status status="PASS" starttime="20220411 18:37:22.707" endtime="20220411 18:37:24.959"/>
 </kw>
 <kw name="Send get in touch form" library="nexign_main_ru">
 <arg>${first_name}</arg>
@@ -273,676 +73,197 @@
 <arg>${job_title}</arg>
 <arg>${business_email}</arg>
 <arg>${phone_number}</arg>
+<arg>${question}</arg>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>class=main-form</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220322 20:52:08.267" endtime="20220322 20:52:08.567"/>
+<status status="PASS" starttime="20220411 18:37:24.960" endtime="20220411 18:37:25.251"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>edit-name</arg>
 <arg>${first_name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:08.568" level="INFO">Typing text 'Mike' into text field 'edit-name'.</msg>
-<status status="PASS" starttime="20220322 20:52:08.567" endtime="20220322 20:52:08.677"/>
+<msg timestamp="20220411 18:37:25.251" level="INFO">Typing text 'Mike' into text field 'edit-name'.</msg>
+<status status="PASS" starttime="20220411 18:37:25.251" endtime="20220411 18:37:25.373"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>edit-last-name</arg>
 <arg>${last_name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:08.678" level="INFO">Typing text 'Dolman' into text field 'edit-last-name'.</msg>
-<status status="PASS" starttime="20220322 20:52:08.678" endtime="20220322 20:52:08.776"/>
+<msg timestamp="20220411 18:37:25.373" level="INFO">Typing text 'Dolman' into text field 'edit-last-name'.</msg>
+<status status="PASS" starttime="20220411 18:37:25.373" endtime="20220411 18:37:25.478"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>edit-company-name</arg>
 <arg>${company_name}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:08.998" level="INFO">Typing text 'IOBS' into text field 'edit-company-name'.</msg>
-<status status="PASS" starttime="20220322 20:52:08.998" endtime="20220322 20:52:09.094"/>
+<msg timestamp="20220411 18:37:25.479" level="INFO">Typing text 'IOBS' into text field 'edit-company-name'.</msg>
+<status status="PASS" starttime="20220411 18:37:25.479" endtime="20220411 18:37:25.605"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>edit-post</arg>
 <arg>${job_title}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:09.095" level="INFO">Typing text 'market agent' into text field 'edit-post'.</msg>
-<status status="PASS" starttime="20220322 20:52:09.095" endtime="20220322 20:52:09.193"/>
+<msg timestamp="20220411 18:37:25.606" level="INFO">Typing text 'market agent' into text field 'edit-post'.</msg>
+<status status="PASS" starttime="20220411 18:37:25.606" endtime="20220411 18:37:25.716"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>edit-e-mail</arg>
 <arg>${business_email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:09.194" level="INFO">Typing text 'maxdolmanmailcom' into text field 'edit-e-mail'.</msg>
-<status status="PASS" starttime="20220322 20:52:09.194" endtime="20220322 20:52:09.288"/>
+<msg timestamp="20220411 18:37:25.716" level="INFO">Typing text 'maxdolmanmailcom' into text field 'edit-e-mail'.</msg>
+<status status="PASS" starttime="20220411 18:37:25.716" endtime="20220411 18:37:25.830"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>edit-phone-number</arg>
 <arg>${phone_number}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:09.492" level="INFO">Typing text '+3878-456-38-38' into text field 'edit-phone-number'.</msg>
-<status status="PASS" starttime="20220322 20:52:09.492" endtime="20220322 20:52:09.590"/>
+<msg timestamp="20220411 18:37:25.830" level="INFO">Typing text '+3878-456-38-38' into text field 'edit-phone-number'.</msg>
+<status status="PASS" starttime="20220411 18:37:25.830" endtime="20220411 18:37:25.952"/>
 </kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>name=subscribe</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:09.679" level="INFO">Selecting checkbox 'name=subscribe'.</msg>
-<msg timestamp="20220322 20:52:09.869" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/fail/selenium-screenshot-4.png"&gt;&lt;img src="screenshots/fail/selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220322 20:52:09.878" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=99.0.4844.74)
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=question</arg>
+<arg>${question}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220411 18:37:25.952" level="INFO">Typing text 'Просьба не реагировать. Это тест.' into text field 'name=question'.</msg>
+<status status="PASS" starttime="20220411 18:37:25.952" endtime="20220411 18:37:26.078"/>
+</kw>
+<kw name="Checkbox Should Not Be Selected" library="SeleniumLibrary">
+<arg>edit-consent</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<msg timestamp="20220411 18:37:26.079" level="INFO">Verifying checkbox 'edit-consent' is not selected.</msg>
+<status status="PASS" starttime="20220411 18:37:26.079" endtime="20220411 18:37:26.110"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220411 18:37:31.112" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220411 18:37:26.110" endtime="20220411 18:37:31.112"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/main/div[7]/div/div/div/div/form/div[10]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220411 18:37:31.112" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/main/div[7]/div/div/div/div/form/div[10]/input'.</msg>
+<msg timestamp="20220411 18:37:31.272" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/fail/selenium-screenshot-36.png"&gt;&lt;img src="screenshots/fail/selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220411 18:37:31.275" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=100.0.4896.75)
 Stacktrace:
 Backtrace:
-	Ordinal0 [0x009069A3+2582947]
-	Ordinal0 [0x0089A6D1+2139857]
-	Ordinal0 [0x00793960+1063264]
-	Ordinal0 [0x007C0E4E+1248846]
-	Ordinal0 [0x007B6B53+1207123]
-	Ordinal0 [0x007D854C+1344844]
-	Ordinal0 [0x007B6524+1205540]
-	Ordinal0 [0x007D86A4+1345188]
-	Ordinal0 [0x007E834A+1409866]
-	Ordinal0 [0x007D8366+1344358]
-	Ordinal0 [0x007B5176+1200502]
-	Ordinal0 [0x007B6066+1204326]
-	GetHandleVerifier [0x00AABE02+1675858]
-	GetHandleVerifier [0x00B6036C+2414524]
-	GetHandleVerifier [0x0099BB01+560977]
-	GetHandleVerifier [0x0099A8D3+556323]
-	Ordinal0 [0x008A020E+2163214]
-	Ordinal0 [0x008A5078+2183288]
-	Ordinal0 [0x008A51C0+2183616]
-	Ordinal0 [0x008AEE1C+2223644]
-	BaseThreadInitThunk [0x76C9FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x777A7A7E+286]
-	RtlGetAppContainerNamedObjectPath [0x777A7A4E+238]
+	Ordinal0 [0x01127413+2389011]
+	Ordinal0 [0x010B9F61+1941345]
+	Ordinal0 [0x00FAC520+836896]
+	Ordinal0 [0x00FDA1F3+1024499]
+	Ordinal0 [0x00FCFF93+982931]
+	Ordinal0 [0x00FF414C+1130828]
+	Ordinal0 [0x00FCF974+981364]
+	Ordinal0 [0x00FF4364+1131364]
+	Ordinal0 [0x01004302+1196802]
+	Ordinal0 [0x00FF3F66+1130342]
+	Ordinal0 [0x00FCE546+976198]
+	Ordinal0 [0x00FCF456+980054]
+	GetHandleVerifier [0x012D9632+1727522]
+	GetHandleVerifier [0x0138BA4D+2457661]
+	GetHandleVerifier [0x011BEB81+569713]
+	GetHandleVerifier [0x011BDD76+566118]
+	Ordinal0 [0x010C0B2B+1968939]
+	Ordinal0 [0x010C5988+1989000]
+	Ordinal0 [0x010C5A75+1989237]
+	Ordinal0 [0x010CECB1+2026673]
+	BaseThreadInitThunk [0x7749FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7A4E+238]
 </msg>
-<status status="FAIL" starttime="20220322 20:52:09.679" endtime="20220322 20:52:09.878"/>
+<status status="FAIL" starttime="20220411 18:37:31.112" endtime="20220411 18:37:31.275"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220411 18:37:31.275" endtime="20220411 18:37:31.275"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>edit-consent</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" starttime="20220411 18:37:31.275" endtime="20220411 18:37:31.275"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div/main/div[7]/div/div/div/div/form/div[11]/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220411 18:37:31.276" endtime="20220411 18:37:31.276"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>edit-actions-submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220322 20:52:09.878" endtime="20220322 20:52:09.878"/>
-</kw>
-<kw name="Page Should Not Contain" library="SeleniumLibrary">
-<arg>Заполните форму ниже, и наш сотрудник свяжется с вами в ближайшее время</arg>
-<doc>Verifies the current page does not contain ``text``.</doc>
-<status status="NOT RUN" starttime="20220322 20:52:09.878" endtime="20220322 20:52:09.878"/>
+<status status="NOT RUN" starttime="20220411 18:37:31.276" endtime="20220411 18:37:31.276"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Request has been sent</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20220322 20:52:09.878" endtime="20220322 20:52:09.878"/>
+<status status="NOT RUN" starttime="20220411 18:37:31.276" endtime="20220411 18:37:31.276"/>
 </kw>
-<status status="FAIL" starttime="20220322 20:52:08.259" endtime="20220322 20:52:09.878"/>
+<status status="FAIL" starttime="20220411 18:37:24.959" endtime="20220411 18:37:31.276"/>
 </kw>
 <kw name="Close Browser and Log" library="nexign_main_ru" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220322 20:52:09.878" endtime="20220322 20:52:12.010"/>
+<status status="PASS" starttime="20220411 18:37:31.277" endtime="20220411 18:37:33.460"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Finished test.</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:12.010" level="INFO">Finished test.</msg>
-<status status="PASS" starttime="20220322 20:52:12.010" endtime="20220322 20:52:12.010"/>
+<msg timestamp="20220411 18:37:33.460" level="INFO">Finished test.</msg>
+<status status="PASS" starttime="20220411 18:37:33.460" endtime="20220411 18:37:33.460"/>
 </kw>
-<status status="PASS" starttime="20220322 20:52:09.878" endtime="20220322 20:52:12.010"/>
+<status status="PASS" starttime="20220411 18:37:31.277" endtime="20220411 18:37:33.460"/>
 </kw>
-<status status="FAIL" starttime="20220322 20:52:00.229" endtime="20220322 20:52:12.010">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=99.0.4844.74)
+<doc>Сценарий отправки формы обратной связи в роли пользователя</doc>
+<tag>cookie</tag>
+<tag>get-in-touch-form</tag>
+<tag>nexign.com</tag>
+<status status="FAIL" starttime="20220411 18:37:19.099" endtime="20220411 18:37:33.461">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=100.0.4896.75)
 Stacktrace:
 Backtrace:
-	Ordinal0 [0x009069A3+2582947]
-	Ordinal0 [0x0089A6D1+2139857]
-	Ordinal0 [0x00793960+1063264]
-	Ordinal0 [0x007C0E4E+1248846]
-	Ordinal0 [0x007B6B53+1207123]
-	Ordinal0 [0x007D854C+1344844]
-	Ordinal0 [0x007B6524+1205540]
-	Ordinal0 [0x007D86A4+1345188]
-	Ordinal0 [0x007E834A+1409866]
-	Ordinal0 [0x007D8366+1344358]
-	Ordinal0 [0x007B5176+1200502]
-	Ordinal0 [0x007B6066+1204326]
-	GetHandleVerifier [0x00AABE02+1675858]
-	GetHandleVerifier [0x00B6036C+2414524]
-	GetHandleVerifier [0x0099BB01+560977]
-	GetHandleVerifier [0x0099A8D3+556323]
-	Ordinal0 [0x008A020E+2163214]
-	Ordinal0 [0x008A5078+2183288]
-	Ordinal0 [0x008A51C0+2183616]
-	Ordinal0 [0x008AEE1C+2223644]
-	BaseThreadInitThunk [0x76C9FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x777A7A7E+286]
-	RtlGetAppContainerNamedObjectPath [0x777A7A4E+238]
+	Ordinal0 [0x01127413+2389011]
+	Ordinal0 [0x010B9F61+1941345]
+	Ordinal0 [0x00FAC520+836896]
+	Ordinal0 [0x00FDA1F3+1024499]
+	Ordinal0 [0x00FCFF93+982931]
+	Ordinal0 [0x00FF414C+1130828]
+	Ordinal0 [0x00FCF974+981364]
+	Ordinal0 [0x00FF4364+1131364]
+	Ordinal0 [0x01004302+1196802]
+	Ordinal0 [0x00FF3F66+1130342]
+	Ordinal0 [0x00FCE546+976198]
+	Ordinal0 [0x00FCF456+980054]
+	GetHandleVerifier [0x012D9632+1727522]
+	GetHandleVerifier [0x0138BA4D+2457661]
+	GetHandleVerifier [0x011BEB81+569713]
+	GetHandleVerifier [0x011BDD76+566118]
+	Ordinal0 [0x010C0B2B+1968939]
+	Ordinal0 [0x010C5988+1989000]
+	Ordinal0 [0x010C5A75+1989237]
+	Ordinal0 [0x010CECB1+2026673]
+	BaseThreadInitThunk [0x7749FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DA7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DA7A4E+238]
 </status>
 </test>
-<test id="s1-s1-t3" name="Check the subscribe">
-<kw name="Open Browser and Maximize" library="nexign_main_ru" type="SETUP">
-<arg>${url_media}</arg>
-<arg>${browser_chrome}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${test_url}</arg>
-<arg>${test_browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220322 20:52:12.022" level="INFO">Opening browser 'Chrome' to base url 'https://nexign.com/ru/media-centre'.</msg>
-<status status="PASS" starttime="20220322 20:52:12.021" endtime="20220322 20:52:15.373"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220322 20:52:15.374" endtime="20220322 20:52:15.490"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Staring test in ${test_browser}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:15.491" level="INFO">Staring test in Chrome</msg>
-<status status="PASS" starttime="20220322 20:52:15.491" endtime="20220322 20:52:15.491"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Test URL: ${test_url}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:15.492" level="INFO">Test URL: https://nexign.com/ru/media-centre</msg>
-<status status="PASS" starttime="20220322 20:52:15.492" endtime="20220322 20:52:15.493"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:12.021" endtime="20220322 20:52:15.493"/>
-</kw>
-<kw name="Accept cookies" library="nexign_main_ru">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220322 20:52:15.494" endtime="20220322 20:52:15.534"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:52:15.542" level="INFO">Current page contains element 'sliding-popup'.</msg>
-<status status="PASS" starttime="20220322 20:52:15.535" endtime="20220322 20:52:15.542"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220322 20:52:16.546" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220322 20:52:15.543" endtime="20220322 20:52:16.546"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:16.546" level="INFO">Clicking button 'xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]'.</msg>
-<status status="PASS" starttime="20220322 20:52:16.546" endtime="20220322 20:52:16.626"/>
-</kw>
-<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220322 20:52:16.626" endtime="20220322 20:52:17.692"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:15.494" endtime="20220322 20:52:17.692"/>
-</kw>
-<kw name="Subscribed" library="nexign_main_ru">
-<arg>${name}</arg>
-<arg>${post}</arg>
-<arg>${company_name}</arg>
-<arg>${email}</arg>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>id=webform-submission-get-our-newsletter-node-17-add-form</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220322 20:52:17.692" endtime="20220322 20:52:17.985"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=name</arg>
-<arg>${name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:17.985" level="INFO">Typing text 'Alex' into text field 'name=name'.</msg>
-<status status="PASS" starttime="20220322 20:52:17.985" endtime="20220322 20:52:18.091"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=post</arg>
-<arg>${post}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:18.093" level="INFO">Typing text 'Journalist' into text field 'name=post'.</msg>
-<status status="PASS" starttime="20220322 20:52:18.092" endtime="20220322 20:52:18.181"/>
-</kw>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>xpath=//*[@id="edit-country"]</arg>
-<arg>Австрия</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220322 20:52:18.182" level="INFO">Selecting options from selection list 'xpath=//*[@id="edit-country"]' by value Австрия.</msg>
-<status status="PASS" starttime="20220322 20:52:18.182" endtime="20220322 20:52:18.255"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=company_name</arg>
-<arg>${company_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:18.256" level="INFO">Typing text 'IOBS' into text field 'name=company_name'.</msg>
-<status status="PASS" starttime="20220322 20:52:18.256" endtime="20220322 20:52:18.349"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name=e_mail</arg>
-<arg>${email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:18.351" level="INFO">Typing text '123' into text field 'name=e_mail'.</msg>
-<status status="PASS" starttime="20220322 20:52:18.350" endtime="20220322 20:52:18.436"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="webform-submission-get-our-newsletter-node-17-add-form"]/div[6]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:18.437" level="INFO">Clicking element 'xpath=//*[@id="webform-submission-get-our-newsletter-node-17-add-form"]/div[6]'.</msg>
-<status status="PASS" starttime="20220322 20:52:18.437" endtime="20220322 20:52:18.488"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>name=op</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:18.489" level="INFO">Clicking element 'name=op'.</msg>
-<status status="PASS" starttime="20220322 20:52:18.489" endtime="20220322 20:52:18.546"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>class=webform-confirmation</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20220322 20:52:23.838" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/fail/selenium-screenshot-5.png"&gt;&lt;img src="screenshots/fail/selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220322 20:52:23.838" level="FAIL">Element 'class=webform-confirmation' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20220322 20:52:18.547" endtime="20220322 20:52:23.838"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>class=webform-confirmation</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="NOT RUN" starttime="20220322 20:52:24.015" endtime="20220322 20:52:24.015"/>
-</kw>
-<status status="FAIL" starttime="20220322 20:52:17.692" endtime="20220322 20:52:24.015"/>
-</kw>
-<kw name="Close Browser and Log" library="nexign_main_ru" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220322 20:52:24.015" endtime="20220322 20:52:26.113"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Finished test.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:26.113" level="INFO">Finished test.</msg>
-<status status="PASS" starttime="20220322 20:52:26.113" endtime="20220322 20:52:26.113"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:24.015" endtime="20220322 20:52:26.114"/>
-</kw>
-<status status="FAIL" starttime="20220322 20:52:12.020" endtime="20220322 20:52:26.114">Element 'class=webform-confirmation' not visible after 5 seconds.</status>
-</test>
-<doc>Automation tests for an inderpendent task for Nexign Bootcamp</doc>
-<status status="FAIL" starttime="20220322 20:51:47.016" endtime="20220322 20:52:26.122"/>
-</suite>
-<suite id="s1-s2" name="Test Nexign Job" source="C:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\test_cases\test_nexign_job.robot">
-<test id="s1-s2-t1" name="Test go to student page">
-<kw name="Open Browser and Maximize" library="nexign_main_ru" type="SETUP">
-<arg>${url_job}</arg>
-<arg>${browser_name}</arg>
-<msg timestamp="20220322 20:52:26.138" level="FAIL">Variable '${browser_name}' not found.</msg>
-<status status="FAIL" starttime="20220322 20:52:26.138" endtime="20220322 20:52:26.138"/>
-</kw>
-<kw name="Close Browser and Log" library="nexign_main_ru" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220322 20:52:26.143" endtime="20220322 20:52:26.143"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Finished test.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:26.144" level="INFO">Finished test.</msg>
-<status status="PASS" starttime="20220322 20:52:26.143" endtime="20220322 20:52:26.144"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:26.143" endtime="20220322 20:52:26.144"/>
-</kw>
-<status status="FAIL" starttime="20220322 20:52:26.138" endtime="20220322 20:52:26.144">Setup failed:
-Variable '${browser_name}' not found.</status>
-</test>
-<test id="s1-s2-t2" name="Test send form to school QA">
-<kw name="Open Browser and Maximize" library="nexign_main_ru" type="SETUP">
-<arg>${url_job}</arg>
-<arg>${browser_name}</arg>
-<msg timestamp="20220322 20:52:26.152" level="FAIL">Variable '${browser_name}' not found.</msg>
-<status status="FAIL" starttime="20220322 20:52:26.151" endtime="20220322 20:52:26.153"/>
-</kw>
-<kw name="Close Browser and Log" library="nexign_main_ru" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220322 20:52:26.155" endtime="20220322 20:52:26.155"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Finished test.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:26.155" level="INFO">Finished test.</msg>
-<status status="PASS" starttime="20220322 20:52:26.155" endtime="20220322 20:52:26.156"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:26.154" endtime="20220322 20:52:26.156"/>
-</kw>
-<status status="FAIL" starttime="20220322 20:52:26.144" endtime="20220322 20:52:26.157">Setup failed:
-Variable '${browser_name}' not found.</status>
-</test>
-<status status="FAIL" starttime="20220322 20:52:26.126" endtime="20220322 20:52:26.161"/>
-</suite>
-<suite id="s1-s3" name="Test Nexign Main Ru" source="C:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\test_cases\test_nexign_main_ru.robot">
-<test id="s1-s3-t1" name="Test_get_in_touch">
-<kw name="Open Browser and Maximize" library="nexign_main_ru" type="SETUP">
-<arg>${url_main}</arg>
-<arg>${browser_chrome}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${test_url}</arg>
-<arg>${test_browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220322 20:52:26.174" level="INFO">Opening browser 'Chrome' to base url 'https://nexign.com/ru/'.</msg>
-<status status="PASS" starttime="20220322 20:52:26.174" endtime="20220322 20:52:34.644"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220322 20:52:34.645" endtime="20220322 20:52:34.765"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Staring test in ${test_browser}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:34.766" level="INFO">Staring test in Chrome</msg>
-<status status="PASS" starttime="20220322 20:52:34.766" endtime="20220322 20:52:34.766"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Test URL: ${test_url}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:34.767" level="INFO">Test URL: https://nexign.com/ru/</msg>
-<status status="PASS" starttime="20220322 20:52:34.767" endtime="20220322 20:52:34.768"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:26.173" endtime="20220322 20:52:34.768"/>
-</kw>
-<kw name="Accept cookies" library="nexign_main_ru">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220322 20:52:34.769" endtime="20220322 20:52:34.810"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:52:34.824" level="INFO">Current page contains element 'sliding-popup'.</msg>
-<status status="PASS" starttime="20220322 20:52:34.811" endtime="20220322 20:52:34.825"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220322 20:52:35.837" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220322 20:52:34.825" endtime="20220322 20:52:35.837"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:35.837" level="INFO">Clicking button 'xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]'.</msg>
-<status status="PASS" starttime="20220322 20:52:35.837" endtime="20220322 20:52:35.906"/>
-</kw>
-<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220322 20:52:35.907" endtime="20220322 20:52:37.007"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:34.769" endtime="20220322 20:52:37.007"/>
-</kw>
-<kw name="Send get in touch form" library="nexign_main_ru">
-<arg>${first_name}</arg>
-<arg>${last_name}</arg>
-<arg>${company_name}</arg>
-<arg>${job_title}</arg>
-<arg>${business_email}</arg>
-<arg>${phone_number}</arg>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>class=main-form</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220322 20:52:37.012" endtime="20220322 20:52:37.311"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>edit-name</arg>
-<arg>${first_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:37.312" level="INFO">Typing text 'Mike' into text field 'edit-name'.</msg>
-<status status="PASS" starttime="20220322 20:52:37.311" endtime="20220322 20:52:37.418"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>edit-last-name</arg>
-<arg>${last_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:37.420" level="INFO">Typing text 'Dolman' into text field 'edit-last-name'.</msg>
-<status status="PASS" starttime="20220322 20:52:37.419" endtime="20220322 20:52:37.515"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>edit-company-name</arg>
-<arg>${company_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:37.516" level="INFO">Typing text 'IOBS' into text field 'edit-company-name'.</msg>
-<status status="PASS" starttime="20220322 20:52:37.516" endtime="20220322 20:52:37.604"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>edit-post</arg>
-<arg>${job_title}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:37.606" level="INFO">Typing text 'market agent' into text field 'edit-post'.</msg>
-<status status="PASS" starttime="20220322 20:52:37.606" endtime="20220322 20:52:37.695"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>edit-e-mail</arg>
-<arg>${business_email}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:37.696" level="INFO">Typing text 'maxdolmanmailcom' into text field 'edit-e-mail'.</msg>
-<status status="PASS" starttime="20220322 20:52:37.696" endtime="20220322 20:52:37.787"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>edit-phone-number</arg>
-<arg>${phone_number}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:37.788" level="INFO">Typing text '+3878-456-38-38' into text field 'edit-phone-number'.</msg>
-<status status="PASS" starttime="20220322 20:52:37.788" endtime="20220322 20:52:37.885"/>
-</kw>
-<kw name="Select Checkbox" library="SeleniumLibrary">
-<arg>name=subscribe</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:37.886" level="INFO">Selecting checkbox 'name=subscribe'.</msg>
-<msg timestamp="20220322 20:52:38.067" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="screenshots/fail/selenium-screenshot-6.png"&gt;&lt;img src="screenshots/fail/selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220322 20:52:38.067" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=99.0.4844.74)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x009069A3+2582947]
-	Ordinal0 [0x0089A6D1+2139857]
-	Ordinal0 [0x00793960+1063264]
-	Ordinal0 [0x007C0E4E+1248846]
-	Ordinal0 [0x007B6B53+1207123]
-	Ordinal0 [0x007D854C+1344844]
-	Ordinal0 [0x007B6524+1205540]
-	Ordinal0 [0x007D86A4+1345188]
-	Ordinal0 [0x007E834A+1409866]
-	Ordinal0 [0x007D8366+1344358]
-	Ordinal0 [0x007B5176+1200502]
-	Ordinal0 [0x007B6066+1204326]
-	GetHandleVerifier [0x00AABE02+1675858]
-	GetHandleVerifier [0x00B6036C+2414524]
-	GetHandleVerifier [0x0099BB01+560977]
-	GetHandleVerifier [0x0099A8D3+556323]
-	Ordinal0 [0x008A020E+2163214]
-	Ordinal0 [0x008A5078+2183288]
-	Ordinal0 [0x008A51C0+2183616]
-	Ordinal0 [0x008AEE1C+2223644]
-	BaseThreadInitThunk [0x76C9FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x777A7A7E+286]
-	RtlGetAppContainerNamedObjectPath [0x777A7A4E+238]
-</msg>
-<status status="FAIL" starttime="20220322 20:52:37.885" endtime="20220322 20:52:38.067"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>edit-actions-submit</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20220322 20:52:38.067" endtime="20220322 20:52:38.067"/>
-</kw>
-<kw name="Page Should Not Contain" library="SeleniumLibrary">
-<arg>Заполните форму ниже, и наш сотрудник свяжется с вами в ближайшее время</arg>
-<doc>Verifies the current page does not contain ``text``.</doc>
-<status status="NOT RUN" starttime="20220322 20:52:38.067" endtime="20220322 20:52:38.067"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Request has been sent</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20220322 20:52:38.067" endtime="20220322 20:52:38.067"/>
-</kw>
-<status status="FAIL" starttime="20220322 20:52:37.007" endtime="20220322 20:52:38.067"/>
-</kw>
-<kw name="Close Browser and Log" library="nexign_main_ru" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220322 20:52:38.072" endtime="20220322 20:52:40.207"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Finished test.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:40.207" level="INFO">Finished test.</msg>
-<status status="PASS" starttime="20220322 20:52:40.207" endtime="20220322 20:52:40.207"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:38.067" endtime="20220322 20:52:40.207"/>
-</kw>
-<status status="FAIL" starttime="20220322 20:52:26.173" endtime="20220322 20:52:40.207">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=99.0.4844.74)
-Stacktrace:
-Backtrace:
-	Ordinal0 [0x009069A3+2582947]
-	Ordinal0 [0x0089A6D1+2139857]
-	Ordinal0 [0x00793960+1063264]
-	Ordinal0 [0x007C0E4E+1248846]
-	Ordinal0 [0x007B6B53+1207123]
-	Ordinal0 [0x007D854C+1344844]
-	Ordinal0 [0x007B6524+1205540]
-	Ordinal0 [0x007D86A4+1345188]
-	Ordinal0 [0x007E834A+1409866]
-	Ordinal0 [0x007D8366+1344358]
-	Ordinal0 [0x007B5176+1200502]
-	Ordinal0 [0x007B6066+1204326]
-	GetHandleVerifier [0x00AABE02+1675858]
-	GetHandleVerifier [0x00B6036C+2414524]
-	GetHandleVerifier [0x0099BB01+560977]
-	GetHandleVerifier [0x0099A8D3+556323]
-	Ordinal0 [0x008A020E+2163214]
-	Ordinal0 [0x008A5078+2183288]
-	Ordinal0 [0x008A51C0+2183616]
-	Ordinal0 [0x008AEE1C+2223644]
-	BaseThreadInitThunk [0x76C9FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x777A7A7E+286]
-	RtlGetAppContainerNamedObjectPath [0x777A7A4E+238]
-</status>
-</test>
-<test id="s1-s3-t2" name="Test_contains_and_accept_cookies">
-<kw name="Open Browser and Maximize" library="nexign_main_ru" type="SETUP">
-<arg>${url_main}</arg>
-<arg>${browser_chrome}</arg>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${test_url}</arg>
-<arg>${test_browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220322 20:52:40.220" level="INFO">Opening browser 'Chrome' to base url 'https://nexign.com/ru/'.</msg>
-<status status="PASS" starttime="20220322 20:52:40.219" endtime="20220322 20:52:43.679"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220322 20:52:43.680" endtime="20220322 20:52:43.806"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Staring test in ${test_browser}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:43.807" level="INFO">Staring test in Chrome</msg>
-<status status="PASS" starttime="20220322 20:52:43.807" endtime="20220322 20:52:43.807"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Test URL: ${test_url}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:43.808" level="INFO">Test URL: https://nexign.com/ru/</msg>
-<status status="PASS" starttime="20220322 20:52:43.808" endtime="20220322 20:52:43.808"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:40.219" endtime="20220322 20:52:43.809"/>
-</kw>
-<kw name="Page contain cookies warn" library="nexign_main_ru">
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>class=cookie-warning__text_main</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:52:43.828" level="INFO">Current page contains element 'class=cookie-warning__text_main'.</msg>
-<status status="PASS" starttime="20220322 20:52:43.810" endtime="20220322 20:52:43.828"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>class=cookie-warning__text</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:52:43.844" level="INFO">Current page contains element 'class=cookie-warning__text'.</msg>
-<status status="PASS" starttime="20220322 20:52:43.829" endtime="20220322 20:52:43.844"/>
-</kw>
-<kw name="Page Should Contain Link" library="SeleniumLibrary">
-<arg>/sites/default/files/privacy-policy/privacy_policy.pdf</arg>
-<doc>Verifies link identified by ``locator`` is found from current page.</doc>
-<msg timestamp="20220322 20:52:43.864" level="INFO">Current page contains link '/sites/default/files/privacy-policy/privacy_policy.pdf'.</msg>
-<status status="PASS" starttime="20220322 20:52:43.845" endtime="20220322 20:52:43.864"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:43.810" endtime="20220322 20:52:43.865"/>
-</kw>
-<kw name="Accept cookies" library="nexign_main_ru">
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220322 20:52:43.866" endtime="20220322 20:52:43.911"/>
-</kw>
-<kw name="Page Should Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20220322 20:52:43.920" level="INFO">Current page contains element 'sliding-popup'.</msg>
-<status status="PASS" starttime="20220322 20:52:43.912" endtime="20220322 20:52:43.920"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220322 20:52:44.935" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220322 20:52:43.921" endtime="20220322 20:52:44.935"/>
-</kw>
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220322 20:52:44.936" level="INFO">Clicking button 'xpath=//button[@class="agree-button eu-cookie-compliance-secondary-button"]'.</msg>
-<status status="PASS" starttime="20220322 20:52:44.936" endtime="20220322 20:52:45.023"/>
-</kw>
-<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20220322 20:52:45.024" endtime="20220322 20:52:46.115"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:43.866" endtime="20220322 20:52:46.115"/>
-</kw>
-<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
-<arg>sliding-popup</arg>
-<doc>Verifies that element ``locator`` is not found on the current page.</doc>
-<msg timestamp="20220322 20:52:46.128" level="INFO">Current page does not contain element 'sliding-popup'.</msg>
-<status status="PASS" starttime="20220322 20:52:46.115" endtime="20220322 20:52:46.128"/>
-</kw>
-<kw name="Close Browser and Log" library="nexign_main_ru" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220322 20:52:46.128" endtime="20220322 20:52:48.257"/>
-</kw>
-<kw name="Log" library="BuiltIn">
-<arg>Finished test.</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220322 20:52:48.257" level="INFO">Finished test.</msg>
-<status status="PASS" starttime="20220322 20:52:48.257" endtime="20220322 20:52:48.257"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:46.128" endtime="20220322 20:52:48.257"/>
-</kw>
-<status status="PASS" starttime="20220322 20:52:40.218" endtime="20220322 20:52:48.257"/>
-</test>
-<status status="FAIL" starttime="20220322 20:52:26.165" endtime="20220322 20:52:48.265"/>
-</suite>
-<status status="FAIL" starttime="20220322 20:51:47.000" endtime="20220322 20:52:48.271"/>
+<doc>Тестирование сайта nexign.com в рамках самостоятельного проекта</doc>
+<status status="FAIL" starttime="20220411 18:37:18.910" endtime="20220411 18:37:33.467"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="5" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">cookie</stat>
+<stat pass="0" fail="1" skip="0">get-in-touch-form</stat>
+<stat pass="0" fail="1" skip="0">nexign.com</stat>
 </tag>
 <suite>
-<stat pass="2" fail="5" skip="0" id="s1" name="Test Cases">Test Cases</stat>
-<stat pass="1" fail="2" skip="0" id="s1-s1" name="Test Nexign">Test Cases.Test Nexign</stat>
-<stat pass="0" fail="2" skip="0" id="s1-s2" name="Test Nexign Job">Test Cases.Test Nexign Job</stat>
-<stat pass="1" fail="1" skip="0" id="s1-s3" name="Test Nexign Main Ru">Test Cases.Test Nexign Main Ru</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Nexign">Test Nexign</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220322 20:51:47.185" level="ERROR">Error in file 'C:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\resources\nexign_main_ru.robot' on line 3: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
-<msg timestamp="20220322 20:52:26.136" level="ERROR">Error in file 'C:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\resources\nexign_main_ru.robot' on line 3: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
-<msg timestamp="20220322 20:52:26.170" level="ERROR">Error in file 'C:\Users\Max\Desktop\www\VSC_Python\Robot_Framework\resources\nexign_main_ru.robot' on line 3: Invalid resource file extension '.py'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
 </errors>
 </robot>
